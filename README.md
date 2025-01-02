@@ -1,3 +1,6 @@
+## This fork of Sevile's fork ignores the "Unsupported Function"
+This function was introduced in [upstream pull request #1486](https://github.com/jagrosh/MusicBot/pull/1486). This PR, which was first included in release version 0.4.0, makes the bot completely exit if it's run in an "unsupported manner", namely on a public or verified bot. This can cause many problems, especially if the bot is set to auto start in a systemd service, since default behavior will cause systemd to automatically restart it endlessly, causing the bot to contact the Discord API thousands of times in a short time period, further causing Discord to reset the bot token due to potential abuse.
+
 ## Unofficial JMusicBot update (Forked from: https://github.com/jagrosh/MusicBot, with @MichailiK commits)
 Compiled using Maven
 
