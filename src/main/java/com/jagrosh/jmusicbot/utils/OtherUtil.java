@@ -218,6 +218,7 @@ public class OtherUtil
      */
     public static String getUnsupportedBotReason(JDA jda) 
     {
+        /*
         if (jda.getSelfUser().getFlags().contains(User.UserFlag.VERIFIED_BOT))
             return "The bot is verified. Using JMusicBot in a verified bot is not supported.";
 
@@ -227,7 +228,7 @@ public class OtherUtil
                     + "Developer Dashboard at https://discord.com/developers/applications/" + jda.getSelfUser().getId() + "/bot ."
                     + "You may also need to disable all Installation Contexts at https://discord.com/developers/applications/" 
                     + jda.getSelfUser().getId() + "/installation .";
-
+        */
         return null;
     }
 }
